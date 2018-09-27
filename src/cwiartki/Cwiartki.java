@@ -16,21 +16,15 @@ public class Cwiartki {
         scan.nextLine();
 
 
-        if (x>0 && y>0) {
+        if (x>0 && y>=0) {
             System.out.println("ćwiartka pierwsza");
-        }
-
-        if (x>0 && y<0) {
+        } else if (x>=0 && y<0) {
             System.out.println("ćwiartka druga");
-        }
-
-        if (x<0 && y<0) {
+        } else if (x<0 && y<=0) {
             System.out.println("ćwiartka trzecia");
-        }
-        if (x<0 && y>0) {
+        } else if (x<=0 && y>0) {
             System.out.println("ćwiartka czwarta");
-        }
-        if (x==0 && y==0) {
+        } else {
             System.out.println("Początek układu - punkt (0,0)");
         }
 
