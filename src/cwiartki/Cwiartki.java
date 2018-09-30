@@ -16,16 +16,18 @@ public class Cwiartki {
         scan.nextLine();
 
 
-        if (x>0 && y>=0) {
+        if (x>0 && y>0) {
             System.out.println("ćwiartka pierwsza");
-        } else if (x>=0 && y<0) {
+        } else if (x>0 && y<0) {
             System.out.println("ćwiartka druga");
-        } else if (x<0 && y<=0) {
+        } else if (x<0 && y<0) {
             System.out.println("ćwiartka trzecia");
-        } else if (x<=0 && y>0) {
+        } else if (x<0 && y>0) {
             System.out.println("ćwiartka czwarta");
-        } else {
+        } else if (x==0 && y==0) {
             System.out.println("Początek układu - punkt (0,0)");
+        } else {
+            System.out.println("Podany punkt leży na jednej z osi układu współrzędnych");
         }
 
     }
